@@ -10,7 +10,7 @@ my $args =  {
     field_list => [
         'username' => {
             type  => 'Text',
-            apply => [ { check => qr/^[0-9a-z]*/, message => 'Contains invalid characters' } ],
+            apply => [ { check => qr/^[0-9a-z]+/, message => 'Contains invalid characters' } ],
         },
         'password' => {
             type => 'Password',
@@ -63,11 +63,11 @@ my $args =  {
         },
         'sub.user' => {
             type  => 'Text',
-            apply => [ { check => qr/^[0-9a-z]*/, message => 'Not a valid user' } ],
+            apply => [ { check => qr/^[0-9a-z]+/, message => 'Not a valid user' } ],
         },
         'sub.name' => {
             type  => 'Text',
-            apply => [ { check => qr/^[0-9a-z]*/, message => 'Not a valid name' } ],
+            apply => [ { check => qr/^[0-9a-z]+/, message => 'Not a valid name' } ],
         },
         'reset' => {
             type => 'Reset',

@@ -103,7 +103,7 @@ created using the 'field_list' attribute to set fields:
         field_list => [
             'username' => {
                 type  => 'Text',
-                apply => [ { check => qr/^[0-9a-z]*/,
+                apply => [ { check => qr/^[0-9a-z]+/,
                    message => 'Contains invalid characters' } ],
             },
             'select_bar' => {
