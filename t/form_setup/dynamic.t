@@ -16,9 +16,9 @@ my $args =  {
             type => 'Password',
         },
         'a_number' => {
-            type      => 'IntRange',
-            range_min => 12,
-            range_max => 291,
+            type        => 'IntRange',
+            range_start => 12,
+            range_end   => 291,
         },
         'on_off' => {
             type           => 'Checkbox',

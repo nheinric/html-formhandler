@@ -80,9 +80,9 @@ An example of a dynamically created form instance:
                    message => 'Contains invalid characters' } ],
             },
             'some_number' => {
-                type      => 'IntRange',
-                range_min => 12,
-                range_max => 291,
+                type        => 'IntRange',
+                range_start => 12,
+                range_end   => 291,
             },
             'select_foo' => {
                 type    => 'Select',
